@@ -44,7 +44,7 @@ def gpu():
                 gpuName = 'Intel'
                 flag = True
             else:
-                gpuName = 'NVDIA'
+                gpuName = 'NVIDIA'
                 flag = False
             value.append([addr, gpuName, flag])
 
