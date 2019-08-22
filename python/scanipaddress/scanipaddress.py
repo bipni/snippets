@@ -82,5 +82,5 @@ def main():
 
 
 if __name__ == '__main__':
-    print("\nplz wait...\n")
+    print("\nPlease Wait...\n")
     main()
