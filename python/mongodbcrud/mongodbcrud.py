@@ -51,10 +51,19 @@ def delete():
 
 
 def main():
-    # insert()
-    # read()
-    # update()
-    # delete()
+    print("Operation:\n1. Insert\n2. Read\n3. Update\n4. Delete")
+    op = int(input("Enter Operation Number: "))
+
+    if op == 1:
+        insert()
+    elif op == 2:
+        read()
+    elif op == 3:
+        update()
+    elif op == 4:
+        delete()
+    else:
+        print("No Operation Selected!!!")
 
 
 if __name__ == '__main__':
