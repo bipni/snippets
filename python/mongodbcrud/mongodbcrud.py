@@ -49,6 +49,12 @@ def delete():
     db.data.delete_many({"id":pid})
     print('Data Deleted')
 
+def search():
+    name = input("id: ")
+    p = db.data.find_one({"_id": ObjectId(name)})
+
+    print(p["name"])
+
 
 def main():
     print("Operation:\n1. Insert\n2. Read\n3. Update\n4. Delete")
@@ -62,6 +68,8 @@ def main():
         update()
     elif op == 4:
         delete()
+    elif op == 5:
+        search()
     else:
         print("No Operation Selected!!!")
 
