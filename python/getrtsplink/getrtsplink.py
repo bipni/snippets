@@ -64,27 +64,35 @@ def checkServer(address, port, queue):
 def getRtspLink(cameraIp, username="", password=""):
     threads = []
     rtspTemplate = [
-        # "rtsp://[username]:[password]@[ip]/rtsph264480p",
-        # "rtsp://[username]:[password]@[ip]/rtsph2641080p",
-        # "rtsp://[username]:[password]@[ip]/rtsph2641024p",
-        # "rtsp://[username]:[password]@[ip]/rtsph264720p",
-        # "rtsp://[username]:[password]@[ip]/cam/realmonitor",
-        # "rtsp://[username]:[password]@[ip]/live",
-        # "rtsp://[username]:[password]@[ip]:85/",
-        # "rtsp://[username]:[password]@[ip]/cam/realmonitor?channel=0&subtype=1",
-        # "rtsp://[username]:[password]@[ip]/media/video1",
-        # "rtsp://[username]:[password]@[ip]/media/video2",
-        # "rtsp://[username]:[password]@[ip]/av0_0",
-        # "rtsp://[username]:[password]@[ip]:8554/live1.264",
-        # "rtsp://[username]:[password]@[ip]:8554/mjpeg",
-        # "rtsp://[username]:[password]@[ip]/video1",
-        # "rtsp://[username]:[password]@[ip]/11",
-        # "rtsp://[username]:[password]@[ip]/Streaming/Channels/1",
-        # "rtsp://[username]:[password]@[ip]/axis-media/media.amp?videocodec=h264&resolution=640x480",
-        # "rtsp://[username]:[password]@[ip]/onvif-media/media.amp",
-        # "rtsp://[username]:[password]@[ip]/axis-media/media.amp",
-        # "rtsp://[username]:[password]@[ip]/ucast/12",
-        # "rtsp://[username]:[password]@[ip]/cam/realmonitor",
+        #255 IP Came
+        "rtsp://[username]:[password]@[ip]:554/11",
+        "rtsp://[username]:[password]@[ip]/1",
+        
+        #2n Helios
+        "rtsp://[username]:[password]@[ip]/h264_stream",
+
+        
+
+
+        "rtsp://[username]:[password]@[ip]/rtsph264480p",
+        "rtsp://[username]:[password]@[ip]/rtsph2641080p",
+        "rtsp://[username]:[password]@[ip]/rtsph2641024p",
+        "rtsp://[username]:[password]@[ip]/rtsph264720p",
+        "rtsp://[username]:[password]@[ip]/cam/realmonitor",
+        "rtsp://[username]:[password]@[ip]/live",
+        "rtsp://[username]:[password]@[ip]:85/",
+        "rtsp://[username]:[password]@[ip]/cam/realmonitor?channel=0&subtype=1",
+        "rtsp://[username]:[password]@[ip]/media/video1",
+        "rtsp://[username]:[password]@[ip]/media/video2",
+        "rtsp://[username]:[password]@[ip]/av0_0",
+        "rtsp://[username]:[password]@[ip]/video1",
+        "rtsp://[username]:[password]@[ip]/11",
+        "rtsp://[username]:[password]@[ip]/Streaming/Channels/1",
+        "rtsp://[username]:[password]@[ip]/axis-media/media.amp?videocodec=h264&resolution=640x480",
+        "rtsp://[username]:[password]@[ip]/onvif-media/media.amp",
+        "rtsp://[username]:[password]@[ip]/axis-media/media.amp",
+        "rtsp://[username]:[password]@[ip]/ucast/12",
+        "rtsp://[username]:[password]@[ip]/cam/realmonitor",
         "rtsp://[ip]:554/user=[username]_[password]=_channel=0_stream=0.sdp",
         "rtsp://[username]:[password]@[ip]/primarystream",
         "rtsp://[username]:[password]@[ip]/ufirststream",
