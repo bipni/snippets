@@ -64,14 +64,12 @@ def checkServer(address, port, queue):
 def getRtspLink(cameraIp, username="", password=""):
     threads = []
     rtspTemplate = [
-        #255 IP Came
+        #255 IP Cam
         "rtsp://[username]:[password]@[ip]:554/11",
         "rtsp://[username]:[password]@[ip]/1",
         
         #2n Helios
         "rtsp://[username]:[password]@[ip]/h264_stream",
-
-        
 
 
         "rtsp://[username]:[password]@[ip]/rtsph264480p",
@@ -105,7 +103,8 @@ def getRtspLink(cameraIp, username="", password=""):
         "rtsp://[username]:[password]@[ip]/live2.sdp",
         "rtsp://[username]:[password]@[ip]/Video?Codec=MPEG4&Width=1280&Height=720&Fps=15",
         "rtsp://[username]:[password]@[ip]/Video",
-        "rtsp://[ip]:554/onvif/videoStreamId=1"
+        "rtsp://[ip]:554/onvif/videoStreamId=1",
+	"rtsp://[username]:[password]@[ip]/h264_stream"
     ]
 
     for i, j in enumerate(cameraIp):
