@@ -2,8 +2,8 @@ import os
 import glob
 import csv
 
-x = glob.glob(r"/home/bipni/Documents/EX/*.*")
-with open('addfaces.csv', 'w', newline='') as outcsv:
+x = glob.glob(r"/home/bipni/Documents/face/i/*.*")
+with open('/home/bipni/Documents/face/i/addfaces.csv', 'w', newline='') as outcsv:
     writer = csv.DictWriter(outcsv, fieldnames = ["filename", "name", "roll", "mobile", "class", "section", "gender"])
     writer.writeheader()
     for path in x:
