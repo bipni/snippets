@@ -37,10 +37,13 @@ def record_video():
 def get_time():
     local_time = time.ctime(time.time())
     lt = local_time.split(' ')
+
     if len(lt) == 5:
         hour = lt[3].split(':')
+
     if len(lt) == 6:
         hour = lt[4].split(':')
+
     return int(hour[0]), lt[0]
 
 if __name__ == '__main__':
