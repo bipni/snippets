@@ -7,6 +7,8 @@ faces_path = '/home/bipni/Documents/alavyav2/engine/public/images/faces'
 plates_path = '/home/bipni/Documents/alavyav2/engine/public/images/plates'
 cam1_videos_path = '/home/bipni/Videos/cam01'
 cam2_videos_path = '/home/bipni/Videos/cam02'
+cam3_videos_path = '/home/bipni/Videos/cam03'
+cam4_videos_path = '/home/bipni/Videos/cam04'
 images_path = '/home/bipni/Videos/images'
 
 myclient = pymongo.MongoClient("mongodb://localhost:27017/")
@@ -57,6 +59,20 @@ for wideo in wideos:
     w += 1
     os.remove(wideo)
 print(f'{w} anpr videos deleted in cam02')
+
+x = 0
+xideos = glob.glob(cam3_videos_path + '/*')
+for xideo in xideos:
+    x += 1
+    os.remove(xideo)
+print(f'{x} anpr videos deleted in cam03')
+
+y = 0
+yideos = glob.glob(cam4_videos_path + '/*')
+for yideo in yideos:
+    y += 1
+    os.remove(yideo)
+print(f'{y} anpr videos deleted in cam04')
 
 i = 0
 images = glob.glob(images_path + '/*')
