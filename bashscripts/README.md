@@ -3,7 +3,7 @@
 
 ## Set Title
 
-- set-title.sh scripts allow to set the title of the terminal.
+- set-title.sh script allows to set the title of the terminal.
 
 ```bash
 set-title title_name
