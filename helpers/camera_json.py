@@ -1,10 +1,19 @@
 import sys
 import json
 
-with open('cameras.json') as json_file:
-    cameras = json.load(json_file)
+
+json_file = open('cameras.json')
+cameras = json.load(json_file)
 
 cams = sys.argv
+true = False
 
 for cam in cams:
-    print(json.dumps(cameras.get(cam), indent=4))
+    if true:
+        if cam == 'all':
+            print(json.dumps(cameras, indent=4))
+            break
+        
+        print(json.dumps(cameras.get(cam), indent=4))
+    
+    true = True

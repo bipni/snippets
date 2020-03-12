@@ -33,5 +33,12 @@
         "name": "Webcam",
         "tasks": ["FACE_RECOGNITION"],
         "enabled": true
+    },
+    "mobile": {
+        "_id": "cam06",
+        "uri": "rtsp://192.168.1.34:8080/h264_pcm.sdp",
+        "name": "Mobile",
+        "tasks": ["FACE_RECOGNITION"],
+        "enabled": true
     }
 }
