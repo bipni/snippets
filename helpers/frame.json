@@ -1,0 +1,29 @@
+{
+  'file': '/tmp/alavya//cam01-6.jpg',
+  'camera': 'cam01',
+  'results': [
+    {
+      'detection': ['9-0-9-9::1::'],
+      'topleft': [553, 269],
+      'bottomright': [687, 324],
+      'job': 'LICENSE_PLATE_RECOGNITION',
+      'polygon_id': ''
+    }
+  ],
+  'dimensions': {
+    'original': [2304, 1296],
+    'stream': [1066, 600],
+    'inference': [1280, 720]
+  }
+}
+
+{
+  'file': '/tmp/alavya//cam05-4.jpg',
+  'camera': 'cam05',
+  'results': [],
+  'dimensions': {
+    'original': [640, 480],
+    'stream': [800, 600],
+    'inference': [640, 480]
+   }
+ }
