@@ -18,7 +18,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=b'\n\x10\x63\x61lculator.proto\"\x17\n\x06Number\x12\r\n\x05value\x18\x01 \x01(\x02\x32.\n\nCalculator\x12 \n\nSquareRoot\x12\x07.Number\x1a\x07.Number\"\x00\x62\x06proto3'
+  serialized_pb=b'\n\x10\x63\x61lculator.proto\"\x17\n\x06Number\x12\r\n\x05value\x18\x01 \x01(\x02\x32,\n\nCalculator\x12\x1e\n\nSquareRoot\x12\x07.Number\x1a\x07.Numberb\x06proto3'
 )
 
 
@@ -73,7 +73,7 @@ _CALCULATOR = _descriptor.ServiceDescriptor(
   index=0,
   serialized_options=None,
   serialized_start=45,
-  serialized_end=91,
+  serialized_end=89,
   methods=[
   _descriptor.MethodDescriptor(
     name='SquareRoot',
